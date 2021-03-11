@@ -4,14 +4,16 @@ import './homepage.styles.scss';
 
 import Header from '../../components/header/header.component';
 import CustomPlan from '../../components/custom-plan/custom-plan.component';
+import FeatureImg from '../../components/feature-img/feature-img.component';
+import FeatureContent from '../../components/feature-content/feature-content.component';
 
 
 const HomePage = () => (
     <div className="homepage">
         {/* <div className="component-1">Menu</div> */}
         <Header />
-        <div className="component-3">Feature-img</div>
-        <div className="component-4">Feature-text</div>
+        <FeatureImg />
+        <FeatureContent />
         <div className="component-5">Package tours</div>
         <CustomPlan />
 

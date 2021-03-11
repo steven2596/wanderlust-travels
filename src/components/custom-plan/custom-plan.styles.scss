@@ -17,7 +17,7 @@
         height: 2px;
         width: 7rem;
         background-color: var(--color-dark);
-        margin-bottom: var(--m-3);        
+        margin-bottom: var(--mar-m);        
 
         display: block;
         
@@ -35,9 +35,9 @@
         font-size: var(--font-m);
         font-family: var(--font-secondary);
         font-weight: 300;
-        line-height: 2.5rem;
-        margin-top: var(--m-3);
-        margin-bottom: var(--m-4);
+        line-height: var(--line-height);
+        margin-top: var(--mar-m);
+        margin-bottom: var(--mar-l);
     }
     
     &__img {

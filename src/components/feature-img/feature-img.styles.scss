@@ -1,0 +1,15 @@
+.feature-img {
+    grid-column: col-start 1 / col-end 3 ;
+
+    margin: 10rem 0;
+    padding: 3rem;
+    
+}
+
+.feature-picture {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
