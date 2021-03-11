@@ -1,0 +1,46 @@
+:root {
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+
+    --color-primary: #00C6BF;
+
+    --color-secondary: #424656;
+
+    --color-dark: #000000;
+    --color-dark-light: #333333;
+
+    --color-white: #FFFFFF;
+
+    --m-1: 1rem;
+    --m-2: 2rem;
+    --m-3: 3rem;
+    --m-4: 4rem;
+    --m-5: 5rem;
+
+    --font-xs: 1.3rem;
+    --font-s: 1.6rem;
+    --font-m: 1.8rem;
+    --font-l: 2rem;
+    --font-xl: 4rem;
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //62.5% of 16px = 10px >>> 1rem = 10px
+
+}
+
+body {
+    font-family: var(--font-primary);
+    
+}
+

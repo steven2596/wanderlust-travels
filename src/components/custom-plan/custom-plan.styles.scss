@@ -1,0 +1,82 @@
+.custom-plan {
+    grid-column: center-start / center-end ;
+    margin: 10rem 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 30vw;
+    column-gap: 3rem;
+
+    &__content {
+        grid-column: 1 / span 4;
+        padding: 5rem;
+        
+    }
+
+    &__line {
+        height: 2px;
+        width: 7rem;
+        background-color: var(--color-dark);
+        margin-bottom: var(--m-3);        
+
+        display: block;
+        
+    }
+
+    &__heading {
+        font-size: var(--font-xl);
+        font-family: var(--font-primary);
+        font-weight: 400;
+        letter-spacing: 1rem;
+        
+    }
+    
+    &__text {
+        font-size: var(--font-m);
+        font-family: var(--font-secondary);
+        font-weight: 300;
+        line-height: 2.5rem;
+        margin-top: var(--m-3);
+        margin-bottom: var(--m-4);
+    }
+    
+    &__img {
+        grid-column: 5 / -1;
+        position: relative;
+    }  
+
+    &__picture {
+        width: 90%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+        
+        background-image: url(../../images/custom-plan.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__back {
+        width: 90%;
+        height: 100%;
+        display: block;
+        background-color: var(--color-primary);
+
+        position: absolute;
+        top: 3%;
+        left: 2.5%;
+
+        z-index: 1;
+    }
+}
+
+
+
+
+// --font-xs: 1.3rem;
+//     --font-s: 1.6rem;
+//     --font-m: 1.8rem;
+//     --font-l: 2rem;
+//     --font-xl: 2.5rem;

@@ -1,0 +1,47 @@
+.header {
+        grid-column: 1 / -1 ;
+    
+        background-image: url(../../images/header.jpg);
+        background-size: cover;
+        background-position: top;
+
+        position: relative;
+
+    
+    
+    &__container {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    &__heading {
+        font-family: inherit;
+        
+        color: var(--color-dark);
+        text-transform: uppercase;
+
+        @media only screen and (max-width: 1010px) {
+            color: var(--color-white);
+        }
+
+        &-1 {
+            font-size: 5rem;
+            font-weight: 200;
+
+        }
+
+        &-2 {
+            font-size: 7rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.button {
+    margin-top: var(--m-3);
+}
+
+
