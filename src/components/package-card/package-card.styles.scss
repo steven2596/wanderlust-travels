@@ -1,0 +1,26 @@
+.card {
+
+    &__image {
+        
+        width: 500px;
+        height: 500px;
+        display: block;
+
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.card1 {
+    background-image: url(../../assets/images/package-1.jpg);
+}
+
+.card2 {
+    background-image: url(../../assets/images/package-2.jpg);
+}
+
+.card3 {
+    background-image: url(../../assets/images/package-3.jpg);
+}
+
+

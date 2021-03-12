@@ -9,6 +9,9 @@ import FeatureContent from '../../components/feature-content/feature-content.com
 
 import Service from '../../components/service-section/service-section.component';
 import Guide from '../../components/guide/guide.component';
+import Contact from '../../components/contact/contact.component';
+import Footer from '../../components/footer/footer.component';
+import PackageSection from '../../components/package-section/package-section.component';
 
 
 const HomePage = () => (
@@ -17,7 +20,7 @@ const HomePage = () => (
         <Header />
         <FeatureImg />
         <FeatureContent />
-        <div className="component-5">Package tours</div>
+        <PackageSection />
         <CustomPlan />
         <Service />
 
@@ -25,8 +28,8 @@ const HomePage = () => (
         <Guide />
         <div className="component-11">Reviews-img</div>
         <div className="component-12">Reviews-text</div>
-        <div className="component-13">Contact</div>
-        <div className="component-14">Footer</div>
+        <Contact />
+        <Footer />
     </div>
 );
 

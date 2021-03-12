@@ -1,0 +1,40 @@
+.newsletter {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    background-color: var(--color-secondary);
+    text-align: center;
+    padding: 4rem 6rem;
+    color: var(--color-white);
+
+    &__header {
+        font-weight: 300;
+
+        & span {
+            color: var(--color-primary);
+        }
+    }
+
+    &__text {
+        font-family: var(--font-secondary);
+        margin-top: var(--mar-s);
+        margin-bottom: var(--mar-m);
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        border: none;
+        font-size: var(--font-m);
+        font-family: var(--font-secondary);
+        padding: 1.5rem 1rem;
+        flex: 1;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

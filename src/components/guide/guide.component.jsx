@@ -3,7 +3,6 @@ import React from 'react';
 import './guide.styles.scss';
 
 import sprite from '../../assets/icons/sprite.svg';
-import { ReactComponent as GuidelineIcon } from '../../assets/icons/guide-line.svg';
 
 const Guide = () => (
     <div className="guide">
