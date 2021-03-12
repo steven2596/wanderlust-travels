@@ -1,0 +1,115 @@
+.guide {
+    grid-column: 1 / -1 ;
+    padding: 10rem 7rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    column-gap: 8rem;
+    justify-items: center;
+
+    &__content {
+        
+
+        &-icon {
+            width: 3rem;
+            height: 3rem;
+            fill: var(--color-primary);
+        }
+
+        &-header {
+            font-size: var(--font-xl);
+            margin: var(--mar-s) 0;
+        }
+
+        &-text {
+            font-size: var(--font-m);
+            font-family: var(--font-secondary);
+            font-weight: 300;
+            
+            line-height: var(--line-height);
+        }
+
+        
+    }  
+
+    &__steps {
+        
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        column-gap: 5rem;
+
+    }
+
+
+    &__step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &-circle {
+            width: 3rem;
+            height: 3rem;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            color: transparent;
+
+            &--center {
+                display: grid;
+                position: relative;
+
+                &::before,
+                &::after {
+                    content: "";
+                    height: 3px;
+                    background-color: var(--color-primary);
+                    display: block;
+                    position: absolute;
+                    
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &::before {
+                    width: 21vw;
+                    transform: translate(-100%, -50%);
+                }
+
+                &::after {
+                    width: 23vw;
+                }
+            }
+        }
+
+        &-number {
+            margin: var(--mar-m) 0;
+            font-family: var(--font-secondary);
+            
+        }
+        
+
+        &-icon {
+            width: 5rem;
+            height: 5rem;
+            fill: var(--color-primary);
+        }
+
+        &-header {
+            font-size: var(--font-l);
+            font-weight: 500;
+            margin-top: var(--mar-l);
+            margin-bottom: var(--mar-s);
+        }
+
+        &-text {
+            font-size: var(--font-m);
+            font-family: var(--font-secondary);
+            font-weight: 300;
+            line-height: var(--line-height);
+        }
+    }
+}
+

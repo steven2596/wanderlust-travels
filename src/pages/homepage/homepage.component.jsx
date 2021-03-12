@@ -8,6 +8,7 @@ import FeatureImg from '../../components/feature-img/feature-img.component';
 import FeatureContent from '../../components/feature-content/feature-content.component';
 
 import Service from '../../components/service-section/service-section.component';
+import Guide from '../../components/guide/guide.component';
 
 
 const HomePage = () => (
@@ -21,7 +22,7 @@ const HomePage = () => (
         <Service />
 
         <div className="component-9">Destination slider</div>
-        <div className="component-10">How it works</div>
+        <Guide />
         <div className="component-11">Reviews-img</div>
         <div className="component-12">Reviews-text</div>
         <div className="component-13">Contact</div>
