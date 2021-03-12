@@ -1,3 +1,43 @@
 .service {
     grid-column: 1 / -1 ;
+
+    background-image: url(../../assets/images/service-section.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__header {
+        font-size: 4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        
+
+        & span {
+            // background-image: linear-gradient(to right, var(--color-dark), var(--color-primary));
+            // background-clip: text;
+            // -webkit-background-clip: text;
+            // color: transparent;
+            font-weight: 400;
+        }
+    }
+
+    &__content {
+        font-size: var(--font-l);
+        font-family: var(--font-secondary);
+        font-weight: 300;
+        margin: 3rem 8rem 10rem 8rem;
+        line-height: var(--line-height);
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem , 25rem));
+        column-gap: 3rem;
+        row-gap: 3rem;
+        justify-content: center;
+    }
 }

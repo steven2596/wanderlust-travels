@@ -14,8 +14,12 @@
             display: block;
             margin-left: var(--mar-s);
             text-transform: uppercase;
-            color: var(--color-primary);
+            // color: var(--color-primary);
             transform: translateY(-1.3rem);
+            background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
             
         }
     }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './feature-img.styles.scss';
-import feature from '../../images/feature.jpg';
+import feature from '../../assets/images/feature.jpg';
 
 const FeatureImg = () => (
     <div className="feature-img">
