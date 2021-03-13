@@ -9,6 +9,8 @@
     cursor: pointer;
 
     &-small {
-        background-color: var(--color-secondary);
+        font-size: var(--font-s);
+        display: block;
+        padding: 1rem 0;
     }
 }

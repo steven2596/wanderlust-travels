@@ -1,13 +1,46 @@
 .card {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    text-align: center;
+    box-shadow: var(--box-shadow);
 
-    &__image {
-        
-        width: 500px;
-        height: 500px;
-        display: block;
-
+    &__image {      
+        height: 22rem;
         background-size: cover;
         background-position: center;
+    }
+
+    &__header {
+        font-size: var(--font-l);
+    }
+
+    &__details {
+        padding: 1.5rem 3rem;
+    }
+
+    &__list {
+        font-size: var(--font-m);
+        font-family: var(--font-secondary);
+        list-style: none;
+        margin-top: var(--mar-s);
+        margin-bottom: var(--mar-s);
+    }
+
+    &__item {
+        font-size: var(--font-s);
+        font-weight: 300;
+
+        &:not(:last-child) {
+            margin-bottom: var(--mar-xs);
+            padding-bottom: var(--mar-xs);
+            border-bottom: 1px solid var(--color-secondary-light);
+        }
+    }
+
+    &__price {
+        display: block;
+        margin-bottom: var(--mar-s);
+        font-family: var(--font-secondary);
     }
 }
 

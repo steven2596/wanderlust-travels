@@ -1,3 +1,17 @@
 .packages {
     grid-column: center-start / center-end ;
+    margin: 10rem 0rem;
+
+
+    &__header {
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 33rem));
+        gap: 7rem;
+        justify-content: center;
+    }
 }
