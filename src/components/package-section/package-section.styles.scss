@@ -1,9 +1,12 @@
 .packages {
     grid-column: center-start / center-end ;
-    margin: 10rem 0rem;
+    margin: 7rem 0rem;
 
 
     &__header {
+        font-size: var(--font-xl);
+        font-weight: 300;
+        letter-spacing: 1rem;
         text-align: center;
         margin-bottom: 10rem;
     }

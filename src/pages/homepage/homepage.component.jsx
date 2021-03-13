@@ -13,6 +13,7 @@ import Contact from '../../components/contact/contact.component';
 import Footer from '../../components/footer/footer.component';
 import PackageSection from '../../components/package-section/package-section.component';
 import ReviewSlider from '../../components/review/review.component';
+import DestinationSlider from '../../components/destination-slider/destination-slider.component';
 
 
 const HomePage = () => (
@@ -25,7 +26,7 @@ const HomePage = () => (
         <CustomPlan />
         <Service />
 
-        <div className="component-9">Destination slider</div>
+        <DestinationSlider />
         <Guide />
         <ReviewSlider />
         <Contact />

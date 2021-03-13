@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 import './review.styles.scss';
 
@@ -15,8 +15,6 @@ const ReviewSlider = () => {
     const prevSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }
-
-    console.log(current);
 
     if (!Array.isArray(reviews) || reviews.length <= 0) {
         return null;
