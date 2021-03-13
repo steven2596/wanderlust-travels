@@ -1,0 +1,80 @@
+.review-slider {
+    grid-column: col-start 2 / col-end 7;
+    margin: 15rem auto;
+    position: relative;
+
+    &__arrow {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        cursor: pointer;
+        z-index: 1000;
+
+        &--previous {
+            transform: translateX(-200%);
+        }
+    }
+
+    &__line {
+        height: 2px;
+        width: 5rem;
+        display: block;
+        background-color: var(--color-dark);
+    }
+
+    &__header {
+        font-weight: 300;
+        margin-top: var(--mar-m);
+        margin-bottom: 10rem;
+        letter-spacing: 1rem;
+        
+    }
+
+    
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    &__image {
+        height: 35rem;
+        float: right;
+        box-shadow: var(--box-shadow);
+    }
+
+
+    &__text {
+        padding: 5rem;
+        flex: 0 0 50rem;
+    }
+
+    &__comment {
+        font-size: var(--font-m);
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        line-height: var(--line-height);
+    }
+
+    &__name {
+        font-size: var(--font-s);
+    }
+
+
+}
+
+//Slide animation
+.slide {
+    opacity: 0;
+    transform: translateY(5rem);
+    transition-duration: .7s ease;
+
+}
+
+.slide-active {
+    opacity: 1;
+    transition-duration: .5s;
+    transform: scale(1.08) translateY(0);
+}
+

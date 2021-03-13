@@ -12,6 +12,7 @@ import Guide from '../../components/guide/guide.component';
 import Contact from '../../components/contact/contact.component';
 import Footer from '../../components/footer/footer.component';
 import PackageSection from '../../components/package-section/package-section.component';
+import ReviewSlider from '../../components/review/review.component';
 
 
 const HomePage = () => (
@@ -26,8 +27,7 @@ const HomePage = () => (
 
         <div className="component-9">Destination slider</div>
         <Guide />
-        <div className="component-11">Reviews-img</div>
-        <div className="component-12">Reviews-text</div>
+        <ReviewSlider />
         <Contact />
         <Footer />
     </div>
