@@ -10,7 +10,27 @@
     column-gap: 8rem;
     justify-items: center;
 
+    @media only screen and (max-width: 1400px) {
+        padding: 15rem 2rem;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        padding: 7rem 2rem;
+        grid-template-columns: 1fr;
+        row-gap: 7rem;
+        justify-content: center;
+        
+    }
+
     &__content {
+
+        @media only screen and (max-width: 1000px) {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 0 10rem;
+        }
+
+        
         
 
         &-icon {
@@ -42,6 +62,12 @@
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         column-gap: 5rem;
 
+        @media only screen and (max-width: 750px) {
+            grid-template-columns: 60vw;
+            row-gap: 8rem;
+        }
+        
+
     }
 
 
@@ -57,6 +83,7 @@
             background-color: var(--color-primary);
             border-radius: 50%;
             color: transparent;
+
 
             &--center {
                 display: grid;

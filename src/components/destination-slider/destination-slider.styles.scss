@@ -1,17 +1,93 @@
+@import '../../scss/variables';
+
 .destination-slider {
-    grid-column: center-start / center-end ;
+    grid-column: 1 / -1 ;
     margin: 7rem 0;
 
     position: relative;
+
+    @media only screen and (max-width: $bp-xl) {
+        grid-column: col-2 start / span 6 ;
+    }
+
+    @media only screen and (max-width: 900px) {
+        grid-column: 1 / -1 ;
+    }
 
     &__arrow {
         position: absolute;
         top: 55%;
         z-index: 1000;
         cursor: pointer;
+        background-color: transparent;
+        
+        border-radius: 10rem;
+        padding: 1.6rem 2rem;
+
+        @media only screen and (max-width: 900px) {
+            top: 105%;
+        }
+        
+        
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: var(--color-white);
+            border: 2px solid var(--color-dark);
+            border-radius: 50%;
+            opacity: 1;
+            transform: scale(1);
+            transition: all .3s ease;
+            z-index: -1;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: var(--color-dark);
+            border-radius: 50%;
+            transform: scale(0);
+            
+            z-index: -1;
+            transition: all .4s ease;
+        }
+    
+        &:hover {
+            color: var(--color-white);
+    
+            &::before {
+                opacity: 0;
+                transform: scale(1.4);
+            }
+    
+            &::after {
+                transform: scale(1);
+            }
+        }
 
         &--next {
-            right: 0;
+            right: 5%;
+
+            @media only screen and (max-width: 900px) {
+                right: 35%;
+            }
+        }
+
+        &--previous {
+            left: 5%;
+
+            @media only screen and (max-width: 900px) {
+                left: 35%;
+            }
         }
 
         
@@ -33,13 +109,37 @@
     &__image-container {
         width: 60vw;
         position: relative;
+
+        @media only screen and (max-width: 1000px) {
+            width: 75vw;
+        }
+
+        @media only screen and (max-width: 900px) {
+            width: 95vw;
+        }
+
+    
     }
     
     &__image {
         width: 60vw;
-        height: 50rem;
+        height: 40vw;
         object-fit: cover;
         display: block;
+
+        @media only screen and (max-width: 1000px) {
+            width: 75vw;
+            height: 45vw;
+        }
+
+        @media only screen and (max-width: 900px) {
+            width: 95vw;
+            height: 50vw;
+        }
+
+        @media only screen and (max-width: 700px) {
+            height: 55vw;
+        }
 
         
     }
@@ -48,7 +148,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 35%;
+        width: 40%;
         height: 100%;
         background-color: rgba(116, 120, 136,.85);
         padding: 2rem;
@@ -57,6 +157,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media only screen and (max-width: 700px) {
+            width: 50%;
+        }
     }
 
     &__name {
@@ -84,3 +188,4 @@
     transition-duration: .7s;
     // transform: scale(1.08);
 }
+

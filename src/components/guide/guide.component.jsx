@@ -20,7 +20,7 @@ const Guide = () => (
 
         <div className="guide__steps">
             <div className="guide__step">
-                <figure className="guide__step-circle">c</figure>
+                {/* <figure className="guide__step-circle">c</figure> */}
                 <span className="guide__step-number">01</span>
                 <svg className="guide__step-icon" >
                     <use href={sprite + "#icon-phone"} />
@@ -32,7 +32,7 @@ const Guide = () => (
                 </p>
             </div>
             <div className="guide__step">
-                <figure className="guide__step-circle guide__step-circle--center">c</figure>
+                {/* <figure className="guide__step-circle guide__step-circle--center">c</figure> */}
                 <span className="guide__step-number">02</span>
                 <svg className="guide__step-icon" >
                     <use href={sprite + "#icon-map"} />
@@ -44,7 +44,7 @@ const Guide = () => (
                 </p>
             </div>
             <div className="guide__step">
-                <figure className="guide__step-circle" >c</figure>
+                {/* <figure className="guide__step-circle" >c</figure> */}
                 <span className="guide__step-number">03</span>
                 <svg className="guide__step-icon" >
                     <use href={sprite + "#icon-book"} />

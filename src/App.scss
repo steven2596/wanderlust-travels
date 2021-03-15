@@ -1,3 +1,5 @@
+@import './scss/variables';
+
 :root {
     --font-primary: 'Raleway', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
@@ -6,12 +8,19 @@
     --color-primary-dark: #008f93;
 
     --color-secondary: #424656;
-    --color-secondary-light: #747888;
+    --color-secondary-light: rgb(116, 120, 136);
+
+    //Colors for testing
+    // --color-primary: #04F1C2;
+    // --color-primary-dark: #2CDD88;
+
+    // --color-secondary: #41393E;
+    // --color-secondary-light: rgb(116, 120, 136);
 
     --color-dark: #000000;
     --color-dark-light: #333333;
 
-    --color-white: #FFFFFF;
+    --color-white: #ffffff;
 
     --line-height: 2.5rem;
 
@@ -29,7 +38,12 @@
     --font-l: 2rem;
     --font-xl: 4rem;
 
+    // //Media query
+    // --bp-xl: 75em; //1200px
+
 }
+
+$bp-xl: 75em;
 
 *,
 *::before,
@@ -42,6 +56,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; //62.5% of 16px = 10px >>> 1rem = 10px
+
+    @media only screen and (max-width: $bp-xl) {
+        font-size: 50%;
+    }
 
 }
 

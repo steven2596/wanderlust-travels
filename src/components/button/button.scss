@@ -7,10 +7,29 @@
     padding: 1.5rem 4rem;
     color: var(--color-white);
     cursor: pointer;
+    transition: all .3s ease ;
+
+    //Version 2
+    // background-color: transparent;
+    // border: 3px solid var(--color-primary);
+    // color: var(--color-primary);
+    // transition: all .3s ease;
 
     &-small {
         font-size: var(--font-s);
         display: block;
         padding: 1rem 0;
     }
+
+    &:hover {
+        background-color: var(--color-primary-dark);
+
+    }
+
+    //Version 2
+    // &:hover {
+    //     background-color: var(--color-primary);
+    //     color: var(--color-white);
+    //     border: 3px solid var(--color-primary);
+    // }
 }
