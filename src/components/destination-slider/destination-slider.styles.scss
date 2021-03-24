@@ -6,13 +6,7 @@
 
     position: relative;
 
-    @media only screen and (max-width: $bp-xl) {
-        grid-column: col-2 start / span 6 ;
-    }
-
-    @media only screen and (max-width: 900px) {
-        grid-column: 1 / -1 ;
-    }
+    
 
     &__arrow {
         position: absolute;
@@ -80,6 +74,10 @@
             @media only screen and (max-width: 900px) {
                 right: 35%;
             }
+
+            @media only screen and (max-width: 460px) {
+                right: 5%;
+            }
         }
 
         &--previous {
@@ -87,6 +85,10 @@
 
             @media only screen and (max-width: 900px) {
                 left: 35%;
+            }
+
+            @media only screen and (max-width: 460px) {
+                left: 5%;
             }
         }
 
@@ -138,7 +140,7 @@
         }
 
         @media only screen and (max-width: 700px) {
-            height: 55vw;
+            height: 60vw;
         }
 
         
@@ -160,6 +162,12 @@
 
         @media only screen and (max-width: 700px) {
             width: 50%;
+        }
+
+        @media only screen and (max-width: 460px) {
+            width: 100%;
+            justify-content: flex-end;
+            background-color: rgba(116, 120, 136,.75);
         }
     }
 

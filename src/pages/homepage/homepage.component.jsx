@@ -14,6 +14,8 @@ import Footer from '../../components/footer/footer.component';
 import PackageSection from '../../components/package-section/package-section.component';
 import ReviewSlider from '../../components/review/review.component';
 import DestinationSlider from '../../components/destination-slider/destination-slider.component';
+import Newsletter from '../../components/newsletter/newsletter.component';
+
 
 
 const HomePage = () => (
@@ -30,6 +32,7 @@ const HomePage = () => (
         <Guide />
         <ReviewSlider />
         <Contact />
+        <Newsletter />
         <Footer />
     </div>
 );

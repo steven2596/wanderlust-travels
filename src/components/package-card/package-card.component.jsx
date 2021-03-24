@@ -14,8 +14,7 @@ const PackageCard = ({ type, days, destinations, price, image }) => (
             <ul className="card__list" >
                 <li className="card__item">{days} days</li>
                 <li className="card__item">{destinations} destinations</li>
-                <li className="card__item">Visa Application</li>
-                <li className="card__item">Flight Ticket</li>
+                <li className="card__item">Visa Fees</li>
             </ul>
             <span className="card__price">$ {price}</span>
             <Button small >View details</Button>

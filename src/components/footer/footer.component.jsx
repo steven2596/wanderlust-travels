@@ -6,8 +6,10 @@ import sprite from '../../assets/icons/sprite.svg';
 import Newsletter from '../newsletter/newsletter.component';
 
 
+
 const Footer = () => (
     <div className="footer">
+
         <div className="footer__text">
             <p>All rights reserved.</p>
             <p>Copyright by WANDERLUST Group Ltd 2021</p>
@@ -38,7 +40,7 @@ const Footer = () => (
             <a href="#" className="footer__link">Terms</a>
         </nav>
 
-        <Newsletter />
+
     </div>
 );
 

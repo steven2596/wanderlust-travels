@@ -13,37 +13,37 @@ import place10 from '../../assets/images/place-10.jpg';
 const destinations = [
     {
         city: 'Zurich',
-        about: 'The cosmopolitan city by the water combines creative urban life with nature in all its glory. Zurich is abuzz with activity day and night with its countless events, diverse museums, own food festival and Switzerland’s most vibrant nightlife. And if you’re after rest and relaxation, you can be in the Swiss mountains in less than an hour.',
+        about: 'The cosmopolitan city by the water combines creative urban life with nature in all its glory. Zurich is abuzz with activity day and night with its countless events, diverse museums, own food festival and Switzerland’s most vibrant nightlife.',
         image: place1
     },
     {
         city: 'Bern',
-        about: 'Not many cities have managed to retain their historic features quite as successfully as Bern, the capital of Switzerland. The old town of Bern is a UNESCO World Heritage Site and thanks to its 6 kilometres of arcades - the locals refer to them as Lauben - boasts on of the longest weather-sheltered shopping promenades in Europe.',
+        about: 'Not many cities have managed to retain their historic features quite as successfully as Bern, the capital of Switzerland. The old town of Bern is a UNESCO World Heritage Site.',
         image: place2
     },
     {
         city: 'Matterhorn',
-        about: 'The Matterhorn and Switzerland are inseparably linked to each other. The pyramid shaped colossus of a mountain, which is very difficult to climb, is said to be the most-photographed mountain in the world. The Klein-Matterhorn ("Little Matterhorn"), which can be reached via a funicular, lies adjacent to the Matterhorn.',
+        about: 'The Matterhorn and Switzerland are inseparably linked to each other. The pyramid shaped colossus of a mountain is said to be the most-photographed mountain in the world. The Klein-Matterhorn lies adjacent to the Matterhorn.',
         image: place3
     },
     {
         city: 'Lucerne',
-        about: 'Lucerne, the gateway to central Switzerland, sited on Lake Lucerne, is embedded within an impressive mountainous panorama. Thanks to its attractions, its attractive shopping offer, the beautiful lakeside setting and the nearby excursion mountains of the Rigi, Pilatus and Stanserhorn, the town is a destination for many travel groups and individuals on their journey through central Switzerland.',
+        about: 'Lucerne, the gateway to central Switzerland, sited on Lake Lucerne, is embedded within an impressive mountainous panorama. The town is a destination for many travel groups and individuals on their journey through central Switzerland.',
         image: place4
     },
     {
         city: 'Geneva',
-        about: 'Geneva is Switzerland’s most international city, as it is where the European seat of the UNO is based. Even the International Red Cross directs its humanitarian campaigns from here. Besides being a congress city, Geneva is also a centre for culture and history, for trade fairs and exhibitions. The Horloge Fleuri, the large flower clock in the "Jardin Anglais" (English Garden), is a world-renowned symbol of the Geneva watch industry.',
+        about: 'Geneva is Switzerland’s most international city, as it is where the European seat of the UNO is based. Besides being a congress city, Geneva is also a centre for culture and history, for trade fairs and exhibitions.',
         image: place5
     },
     {
         city: 'Zermatt',
-        about: "Zermatt lies at the foot of the Matterhorn. The town's touristic development is closely linked to what is most probably the world's most famous mountain. The vacation destination is a car-free zone, has preserved its original character and offers nearly unlimited possibilities as far as excursions are concerned.",
+        about: "Zermatt lies at the foot of the Matterhorn. The town's touristic development is closely linked to what is most probably the world's most famous mountain.",
         image: place6
     },
     {
         city: 'Grindelwald',
-        about: 'The Eiger village of Grindelwald in the Bernese Oberland lies embedded in a welcoming and green hollow, surrounded by a commanding mountainscape with the Eiger north face and the Wetterhorn. This mountainscape and the numerous lookout points and activities make Grindelwald one of the most popular and cosmopolitan holiday and excursion destinations in Switzerland, and the largest ski resort in the Jungfrau region.',
+        about: 'The Eiger village of Grindelwald in the Bernese Oberland lies embedded in a welcoming and green hollow, surrounded by a commanding mountainscape with the Eiger north face and the Wetterhorn. This mountainscape.',
         image: place7
     },
     {
@@ -54,7 +54,7 @@ const destinations = [
 
     {
         city: 'St. Moritz',
-        about: 'St. Moritz is more than just a holiday resort. It was also the birthplace of Alpine winter tourism (in 1864) and has twice hosted the Winter Olympics. Nevertheless, St. Moritz first became famous thanks to its mineral springs, which were discovered 3,000 years ago and established the town as a summer spa resort early on.',
+        about: 'St. Moritz is more than just a holiday resort. It was also the birthplace of Alpine winter tourism (in 1864) and has twice hosted the Winter Olympics. Nevertheless, St. Moritz first became famous thanks to its mineral springs.',
         image: place9
     },
     {

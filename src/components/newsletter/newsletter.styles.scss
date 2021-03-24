@@ -1,14 +1,31 @@
 .newsletter {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -60%);
+    grid-column: 1 / -1;
+    margin: 0 auto;
     background-color: var(--color-secondary);
     text-align: center;
     padding: 4rem 6rem;
+    margin-top: 7rem ;
     color: var(--color-white);
+
+    @media only screen and (max-width: 900px) {
+        padding: 2rem 2rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin: 0;
+    }
+
+    @media only screen and (max-width: 460px) {
+        padding: 3rem 1rem;
+    }
 
     &__header {
         font-weight: 300;
+        font-size: var(--font-xl);
+
+        @media only screen and (max-width: 460px) {
+            font-size: var(--font-l);
+        }
 
         & span {
             color: var(--color-primary);
@@ -17,6 +34,7 @@
 
     &__text {
         font-family: var(--font-secondary);
+        font-size: var(--font-m);
         margin-top: var(--mar-s);
         margin-bottom: var(--mar-m);
     }
@@ -24,6 +42,10 @@
     &__form {
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: 460px) {
+            flex-direction: column;
+        }
     }
 
     &__input {
@@ -32,6 +54,11 @@
         font-family: var(--font-secondary);
         padding: 1.5rem 1rem;
         flex: 1;
+
+        @media only screen and (max-width: 460px) {
+            align-self: stretch;
+            margin-bottom: var(--mar-m);
+        }
 
         &:focus {
             outline: none;

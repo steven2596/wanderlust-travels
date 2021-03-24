@@ -4,10 +4,23 @@
     display: flex;
     margin-top: 12rem;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: 768px) {
+       padding: 0;
+    }
+
+    @media only screen and (max-width: 568px) {
+        flex-direction: column-reverse;
+        
+     }
     
 
     &__img {
         flex: 0 0 35%;
+
+        @media only screen and (max-width: 768px) {
+            flex: 0 0 45%;
+         }
     }
 
     &__picture {
@@ -15,12 +28,23 @@
         height: 100%;
         display: block;
         object-fit: cover;
+        
+
+        @media only screen and (max-width: 568px) {
+            height: 60%;
+            
+         }
     }
 
     &__content {
         margin-left: 2rem;
         padding: 6rem;
         background-color: var(--color-secondary);
+
+        @media only screen and (max-width: 768px) {
+            margin-left: 0;
+            padding: 6rem 2rem;
+         }
         
         
     }

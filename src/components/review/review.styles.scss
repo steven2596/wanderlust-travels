@@ -11,6 +11,11 @@
         z-index: 1000;
         transition: all .2s ease;
         border-bottom: 3px solid transparent;
+
+        @media only screen and (max-width: 460px) {
+            bottom: -5%;
+        }
+    
         
 
         &:hover {
@@ -18,6 +23,8 @@
         }
 
         &--next {
+
+            
 
             &:hover {
                 transform: translateY(-.7rem);
@@ -42,8 +49,10 @@
 
     &__header {
         font-weight: 300;
+        text-align: center;
         margin-top: var(--mar-m);
         margin-bottom: 10rem;
+    
         letter-spacing: 1rem;
         
     }
@@ -56,6 +65,10 @@
     grid-template-columns: min-content 40vw;
     column-gap: 3rem;
     justify-content: center;
+
+    @media only screen and (max-width: 460px) {
+        grid-template-columns: min-content;
+    }
 
     
 

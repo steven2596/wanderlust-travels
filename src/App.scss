@@ -10,8 +10,8 @@
     --color-secondary: #424656;
     --color-secondary-light: rgb(116, 120, 136);
 
-    //Colors for testing
-    // --color-primary: #04F1C2;
+    // Colors for testing
+    // --color-primary: red;
     // --color-primary-dark: #2CDD88;
 
     // --color-secondary: #41393E;
@@ -43,7 +43,7 @@
 
 }
 
-$bp-xl: 75em;
+
 
 *,
 *::before,
@@ -51,20 +51,34 @@ $bp-xl: 75em;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    
+    
 }
 
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
     font-size: 62.5%; //62.5% of 16px = 10px >>> 1rem = 10px
 
-    @media only screen and (max-width: $bp-xl) {
-        font-size: 50%;
+    @media only screen and (max-width: 1000px) {
+        font-size: 50%; // 1 rem = 8px
     }
 
 }
 
 body {
     font-family: var(--font-primary);
-    
+    overflow-x: hidden;
+
 }
+
+
+
+
+
+
+
+
+
+
 

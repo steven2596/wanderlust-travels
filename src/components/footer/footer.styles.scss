@@ -8,17 +8,50 @@
 
     font-size: var(--font-m);
     padding: 4rem 3rem;
-    padding-top: 15rem;
-    margin-top: 20rem;
+    padding-top: 5rem;
     background-color: var(--color-primary);
+
+    @media only screen and (max-width: 900px) {
+        grid-template-columns: max-content 1fr;
+        row-gap: 5rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+        justify-items: center;
+    }
+
+    
     
 
     &__text {
 
+        @media only screen and (max-width: 900px) {
+            justify-self: end;
+            text-align: right;
+            align-self: center;
+        } 
+
+        @media only screen and (max-width: 600px) {
+            grid-column: 1 / -1;
+            justify-self: center;
+            text-align: center;       
+        }
+
     }
 
     &__icon {
+
+        @media only screen and (max-width: 900px) {
+            grid-column: 1 / 2;
+            grid-row: 1 / span 2;
+            align-self: center;
+        }  
         
+        @media only screen and (max-width: 600px) {
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+            
+        }
     }
 
     &__logo-icon {
@@ -46,6 +79,16 @@
 
     &__links {
         justify-self: end;
+
+        @media only screen and (max-width: 900px) {
+            grid-column: 2 / -1;
+            
+        } 
+        @media only screen and (max-width: 600px) {
+            grid-column: 1 / -1;
+            grid-row: 2 / 3;
+            justify-self: center;
+        }  
     }
 
     &__link {
