@@ -1,0 +1,27 @@
+.logo {
+
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: var(--color-dark);
+            cursor: pointer;
+        }
+    }
+
+    &__part {
+        text-transform: uppercase;
+
+        &--1 {
+            font-size: var(--font-xl);
+        }
+
+        &--2 {
+            font-size: var(--font-l);
+        }
+    }
+}

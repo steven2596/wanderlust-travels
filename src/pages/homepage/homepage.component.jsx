@@ -18,9 +18,10 @@ import Newsletter from '../../components/newsletter/newsletter.component';
 
 
 
+
 const HomePage = () => (
     <div className="homepage">
-        {/* <div className="component-1">Menu</div> */}
+
         <Header />
         <FeatureImg />
         <FeatureContent />

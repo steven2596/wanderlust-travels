@@ -13,7 +13,7 @@ const CustomPlan = () => (
                 in mind, drop us an email to make a custom plan which is tailored
                 to your preferences and needs.
             </p>
-            <Button>Start Now</Button>
+            <Button>Contact Now</Button>
         </div>
         <div className="custom-plan__img">
             <div className="custom-plan__picture"></div>

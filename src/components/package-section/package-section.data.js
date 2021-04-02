@@ -7,7 +7,8 @@ const packageData = [
         days: 7,
         destinations: 7,
         price: 1699,
-        image: 'card1'
+        image: 'card1',
+        routeName: '/package1'
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ const packageData = [
         days: 9,
         destinations: 9,
         price: 2499,
-        image: 'card2'
+        image: 'card2',
+        routeName: '/package2'
     },
     {
         id: 3,
@@ -23,7 +25,8 @@ const packageData = [
         days: 11,
         destinations: 11,
         price: 2699,
-        image: 'card3'
+        image: 'card3',
+        routeName: '/package3'
     }
 ];
 

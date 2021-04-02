@@ -3,9 +3,6 @@ import React from 'react';
 import './footer.styles.scss';
 
 import sprite from '../../assets/icons/sprite.svg';
-import Newsletter from '../newsletter/newsletter.component';
-
-
 
 const Footer = () => (
     <div className="footer">
@@ -34,8 +31,7 @@ const Footer = () => (
         </div>
 
         <nav className="footer__links">
-            <a href="#" className="footer__link">Company</a>
-            <a href="#" className="footer__link">About</a>
+            <a href="#" className="footer__link">About Us</a>
             <a href="#" className="footer__link">FAQ's</a>
             <a href="#" className="footer__link">Terms</a>
         </nav>

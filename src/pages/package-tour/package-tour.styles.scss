@@ -1,0 +1,91 @@
+.tour {
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start]
+                            repeat(8, [col-start] minmax(min-content, 15rem) [col-end])
+                            [center-end] 1fr [full-end];
+
+    &__package {
+        grid-column: center-start / center-end ;
+
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        column-gap: 6rem;
+
+        margin: 10rem 0;
+    }
+
+    &__header {
+        grid-column: 2 / -1;
+
+        font-size: 5rem;
+        font-weight: 200;
+        margin-bottom: var(--mar-s);
+    }
+
+    &__img-container {
+        grid-column: 2 / span 3 ;
+
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        grid-column: 5 / -1 ;
+    }
+}
+
+.content {
+
+    &__header{
+        font-size: var(--font-xl);
+        margin-bottom: var(--mar-s);
+    }
+
+    &__destinations {
+        margin-bottom: var(--mar-xl);
+    }
+
+    &__item {
+        font-size: var(--font-l);
+        margin-bottom: var(--mar-s);
+
+        display: flex;
+        
+    }
+
+    &__day {   
+        color: var(--color-secondary);
+        flex: 0 0 15%;
+    }
+    &__name {
+        
+    }
+
+    &__text {
+        font-size: var(--font-l);
+        font-family: var(--font-secondary);
+        margin-bottom: var(--mar-xs);
+    }
+
+    &__details {
+        font-size: var(--font-l);
+        font-family: var(--font-secondary);
+        list-style: none;
+    }
+
+    &__detail {
+        margin-bottom: var(--mar-xs);
+
+        & > span {
+            margin-right: var(--mar-s);
+            color: var(--color-secondary);
+        }
+    }
+
+    
+}
