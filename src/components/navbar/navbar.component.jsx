@@ -9,13 +9,13 @@ const Navbar = () => {
             <Logo />
             <ul className="nav__list">
                 <li className="nav__item">
-                    <a href="/tours" className="nav__link">packages</a>
+                    <a href="/tours" className="nav__link">PACKAGES</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link">contact</a>
+                    <a href="#" className="nav__link">ABOUT US</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link">about</a>
+                    <a href="/faqs" className="nav__link">FAQs</a>
                 </li>
             </ul>
         </nav>

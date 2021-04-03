@@ -1,13 +1,40 @@
+@keyframes moveFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes moveFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .directory {
 
     &__header {
        margin-top: 25vh;
        margin-bottom: 4rem;
        margin-left: 10rem;
+
+       animation: moveFromRight 1s;   
     }
 
     &__heading {
         font-size: 5rem;
+        
 
         &--1 {
 
@@ -25,7 +52,7 @@
     &__img-container {
         width: 100vw;
         height: 50rem;
-
+        animation: moveFromBottom 1s ;
     }
 
     &__image {
