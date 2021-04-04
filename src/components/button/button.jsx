@@ -2,10 +2,14 @@ import React from 'react';
 
 import './button.scss';
 
-const Button = ({ children, small, ...otherProps }) => (
-    <div className={`${small ? 'button-small' : ''} button`} {...otherProps}>
+const Button = ({ children, small, round, ...otherProps }) => (
+    <button
+        className={`
+    ${small ? 'button-small' : ''}
+    ${round ? 'button-round' : ''} 
+    button`} {...otherProps}>
         {children}
-    </div>
+    </button>
 )
 
 export default Button;

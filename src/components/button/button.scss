@@ -8,14 +8,12 @@
     color: var(--color-white);
     cursor: pointer;
     transition: all .3s ease ;
-
-    //Version 2
-    // background-color: transparent;
-    // border: 3px solid var(--color-primary);
-    // color: var(--color-primary);
-    // transition: all .3s ease;
+    text-align: center;
+    outline: none;
+    border: none;
 
     &-small {
+        width: 100%;
         font-size: var(--font-s);
         display: block;
         padding: 1rem 0;
@@ -26,10 +24,8 @@
 
     }
 
-    //Version 2
-    // &:hover {
-    //     background-color: var(--color-primary);
-    //     color: var(--color-white);
-    //     border: 3px solid var(--color-primary);
-    // }
+    &-round {
+        border-radius: 5px;
+    }
+
 }

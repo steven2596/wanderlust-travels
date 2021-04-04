@@ -25,7 +25,9 @@ const CustomPlan = () => {
             </div>
             {
                 customModal ?
-                    <CustomFormModal /> : null
+                    <CustomFormModal
+                        setCustomModal={setCustomModal}
+                    /> : null
             }
         </div>
     )

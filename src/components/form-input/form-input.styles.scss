@@ -1,0 +1,62 @@
+@mixin shrinkLabel {
+    font-size: var(--font-xs);
+    top: -35%;
+    font-weight: 500;
+    color: var(--color-primary);
+    visibility: visible;
+    opacity: 1;
+}
+
+.input__group {
+    position: relative;
+
+}
+
+.form__input {
+    width: 100%;
+    border: 1px solid var(--color-white);
+    background-color: var(--color-dark-light);
+    font-family: var(--font-secondary);
+    border-radius: 5px;
+    font-size: var(--font-m);
+    padding: 1rem;
+    color: var(--color-white);
+    
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: var(--color-white);
+        font-family: var(--font-primary);
+        font-size: var(--font-m);
+        opacity: .7;
+        transition: all .3s;
+    }
+
+    &:focus::placeholder {
+        opacity: 0;
+    }
+}
+
+.form__label {
+    position: absolute;
+    font-size: var(--font-m);
+    top: 25%;
+    left: 2.1%;
+    color: var(--color-white);
+    visibility: hidden;
+    transition: all .3s;
+    opacity: .7;
+    
+}
+
+.form__input:focus ~ .form__label {
+    @include shrinkLabel;
+    
+}
+
+.shrink-label {
+    @include shrinkLabel;
+}
