@@ -30,7 +30,7 @@
 
     &__question-container {
         background-color: var(--color-grey);
-        padding: 1rem 2rem;
+        padding: 2rem;
         margin: .5rem 0;
         display: flex;
         align-items: flex-start;
@@ -67,7 +67,7 @@
         line-height: var(--line-height);
         height: 0;
         opacity: 0;
-        transition: margin .3s;
+        transition: margin .5s, opacity .3s;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         position: relative;

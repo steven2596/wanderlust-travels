@@ -11,7 +11,6 @@ const FaQs = () => {
     return (
         <section className="faqs">
             <header className="faqs__header">
-
                 <h1 className="faqs__heading">Frequently Asked Questions</h1>
             </header>
 
