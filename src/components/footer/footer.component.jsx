@@ -16,16 +16,13 @@ const Footer = () => (
             <span className="footer__logo-text">wanderlust</span>
             <div className="footer__socials">
                 <svg className="footer__social">
-                    <use href={sprite + "#icon-facebook"}></use>
+                    <use href={sprite + "#icon-facebook2"}></use>
                 </svg>
                 <svg className="footer__social">
                     <use href={sprite + "#icon-instagram"}></use>
                 </svg>
                 <svg className="footer__social">
                     <use href={sprite + "#icon-twitter"}></use>
-                </svg>
-                <svg className="footer__social">
-                    <use href={sprite + "#icon-whatsapp"}></use>
                 </svg>
             </div>
         </div>

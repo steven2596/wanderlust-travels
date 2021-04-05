@@ -116,8 +116,9 @@
     &__content {
         grid-column: 7 / span 5;
         grid-row: 2 / 3;
+        margin-top: 15%;
         padding: 3rem;
-        padding-top: 7rem;
+        
         padding-left: 7rem;
        
 
@@ -126,6 +127,7 @@
             font-weight: 400;
             letter-spacing: 3px;
             margin: 2rem 0;
+
         }
 
         &-text {
@@ -139,9 +141,11 @@
 
     
     &__menu-header {
-        font-size: var(--font-xl);
+        font-size: 3.5rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
         text-align: center;
-        font-weight: 300;
+        font-weight: 500;
         margin-top: 20rem;
         margin-bottom: 5rem;
     }

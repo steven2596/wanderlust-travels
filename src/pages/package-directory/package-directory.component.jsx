@@ -6,6 +6,7 @@ import headerImg from '../../assets/images/header-2.jpg';
 import storyImg from '../../assets/images/directory-story.jpg';
 
 import DirectoryMenu from '../../components/directory-menu/directory-menu.component';
+import PackageBenefit from '../../components/package-benefit/package-benefit.component';
 
 
 const PackageDirectory = () => {
@@ -40,6 +41,8 @@ const PackageDirectory = () => {
 
             <h2 className="directory__menu-header">Tour Packages</h2>
             <DirectoryMenu />
+
+            <PackageBenefit />
 
         </div>
     )
