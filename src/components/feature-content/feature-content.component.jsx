@@ -1,13 +1,9 @@
 import React from 'react';
 
-import { motion } from 'framer-motion';
 
 import './feature-content.styles.scss';
 
-import { ReactComponent as LeafIcon } from '../../assets/icons/leaf.svg';
-import { ReactComponent as StarIcon } from '../../assets/icons/star-full.svg';
-import { ReactComponent as TargetIcon } from '../../assets/icons/target.svg';
-import { ReactComponent as StackIcon } from '../../assets/icons/stack.svg';
+import sprite from '../../assets/icons/sprite.svg';
 
 const FeatureContent = () => (
     <div className="feature-content">
@@ -17,7 +13,9 @@ const FeatureContent = () => (
         </div>
         <div className="feature-content__section">
             <div className="feature-content__textbox">
-                <LeafIcon className='feature-content__icon' />
+                <svg className='feature-content__icon' >
+                    <use href={sprite + '#icon-leaf'} />
+                </svg>
                 <h4 className="feature-content__header">Simple and Convenient</h4>
                 <p className="feature-content__text">
                     Travelling has never been this simple. Make beautiful memories of your lifetime.
@@ -25,21 +23,27 @@ const FeatureContent = () => (
                 </p>
             </div>
             <div className="feature-content__textbox">
-                <StarIcon className='feature-content__icon' />
+                <svg className='feature-content__icon' >
+                    <use href={sprite + '#icon-star-full'} />
+                </svg>
                 <h4 className="feature-content__header">Unforgettable Experiences</h4>
                 <p className="feature-content__text">
                     We will do everything to make your trip unforgettable. Your trip will be filled with vivid impressions and fill you with energy.
                 </p>
             </div>
             <div className="feature-content__textbox">
-                <TargetIcon className='feature-content__icon' />
+                <svg className='feature-content__icon' >
+                    <use href={sprite + '#icon-target'} />
+                </svg>
                 <h4 className="feature-content__header">Personal  Approach</h4>
                 <p className="feature-content__text">
                     Our expert team will provide you with premium services from the start to the end.
                 </p>
             </div>
             <div className="feature-content__textbox">
-                <StackIcon className='feature-content__icon' />
+                <svg className='feature-content__icon' >
+                    <use href={sprite + '#icon-stack'} />
+                </svg>
                 <h4 className="feature-content__header">Whatever You Want</h4>
                 <p className="feature-content__text">
                     Customer’s satisfaction is our first priority. Trip plan will be tailored to your needs.
