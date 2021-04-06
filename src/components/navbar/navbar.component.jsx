@@ -12,7 +12,7 @@ const Navbar = () => {
                     <a href="/tours" className="nav__link">PACKAGES</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link">ABOUT US</a>
+                    <a href="/about" className="nav__link">ABOUT US</a>
                 </li>
                 <li className="nav__item">
                     <a href="/faqs" className="nav__link">FAQs</a>

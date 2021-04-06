@@ -15,7 +15,7 @@
 
     &__heading {
         font-size: var(--font-l);
-        margin: 2rem;
+        margin: 2rem 0;
     }
 
     &__text {
@@ -23,4 +23,9 @@
         font-family: var(--font-secondary);
         font-weight: 300;
     }
+}
+
+.value__feature {
+    align-items: flex-start;
+    text-align: left;
 }

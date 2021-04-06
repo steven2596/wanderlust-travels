@@ -28,8 +28,8 @@ const Footer = () => (
         </div>
 
         <nav className="footer__links">
-            <a href="#" className="footer__link">About Us</a>
-            <a href="#" className="footer__link">FAQ's</a>
+            <a href="/about" className="footer__link">About Us</a>
+            <a href="/faqs" className="footer__link">FAQ's</a>
             <a href="#" className="footer__link">Terms</a>
         </nav>
 

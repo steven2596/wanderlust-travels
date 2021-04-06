@@ -4,11 +4,11 @@ import './about-featurebox.styles.scss';
 
 import sprite from '../../assets/icons/sprite.svg';
 
-const AboutFeatureBox = ({ feature }) => {
+const AboutFeatureBox = ({ feature, value }) => {
     const { icon, title, text } = feature;
 
     return (
-        <div className="main__feature">
+        <div className={`main__feature ${value ? 'value__feature' : ''}`}>
             <svg className="feature__icon" >
                 <use href={sprite + icon} />
             </svg>

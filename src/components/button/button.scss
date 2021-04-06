@@ -1,16 +1,23 @@
 .button {
-    font-size: var(--font-m);
-    font-family: var(--font-secondary);
-    text-transform: uppercase;
-    background-color: var(--color-primary);
-    display: inline-block;
-    padding: 1.5rem 4rem;
-    color: var(--color-white);
-    cursor: pointer;
-    transition: all .3s ease ;
-    text-align: center;
-    outline: none;
-    border: none;
+    
+    &,
+    &:link,
+    &:visited {
+        font-size: var(--font-m);
+        font-family: var(--font-secondary);
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: var(--color-primary);
+        display: inline-block;
+        padding: 1.5rem 4rem;
+        color: var(--color-white);
+        cursor: pointer;
+        transition: all .3s ease ;
+        text-align: center;
+        outline: none;
+        border: none;
+    }
+    
 
     &-small {
         width: 100%;

@@ -1,0 +1,19 @@
+.wave-shape--bottom {
+    margin-top: -.5rem;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+}
+
+.wave-shape--bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 5rem;
+}
+
+.wave-shape--bottom .shape-fill {
+    fill: var(--color-secondary);
+    background-color: var(--color-white);
+}

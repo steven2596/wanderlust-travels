@@ -9,7 +9,7 @@ const Header = () => (
         <div className='header__container'>
             <h2 className="header__heading header__heading-1">discover</h2>
             <h1 className="header__heading header__heading-2">switzerland</h1>
-            <Button>Learn more</Button>
+            <Button route="/tours">Learn more</Button>
         </div>
     </div >
 );

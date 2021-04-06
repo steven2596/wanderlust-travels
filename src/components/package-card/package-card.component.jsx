@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 
 import './package-card.styles.scss';
 
@@ -8,7 +7,7 @@ import Button from '../button/button';
 
 
 
-const PackageCard = ({ type, days, destinations, price, image, routeName, history }) => {
+const PackageCard = ({ type, days, destinations, price, image, routeName }) => {
 
 
     return (
@@ -23,10 +22,12 @@ const PackageCard = ({ type, days, destinations, price, image, routeName, histor
                     <li className="card__item">Visa Fees</li>
                 </ul>
                 <span className="card__price">$ {price}</span>
-                <Button small onClick={() => history.push(`tours${routeName}`)}>View details</Button>
+
+                <Button small round route={`/tours${routeName}`}>View Details</Button>
+
             </div>
         </div>
     )
 };
 
-export default withRouter(PackageCard);
+export default PackageCard;

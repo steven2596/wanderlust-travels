@@ -6,6 +6,11 @@
         width: 50%;
         margin: 0 auto;
         margin-top: 20rem;
+        margin-bottom: 25rem;
+        
+        @media only screen and (max-width: 800px) {
+            width: 90%;
+        }
     }
 
     &__heading {
@@ -21,6 +26,7 @@
 
         &--2 {
             font-size: 4rem;
+            font-weight: 300;
         }
     }
 
@@ -32,6 +38,12 @@
         padding: 15rem 5rem;
         
     }
+
+    &__values {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        margin: 20rem 0;
+    }
 }
 
 .main {
@@ -41,12 +53,15 @@
         margin: 0 auto;
         text-align: center;
 
+        @media only screen and (max-width: 800px) {
+            width: 90%;
+        }
     }
 
     &__heading {
         font-size: var(--font-xl);
         font-weight: 400;
-        
+        color: var(--color-primary);
     }
 
     &__text {
@@ -67,43 +82,46 @@
     }
 }
 
-.custom-shape-divider-top {
-    margin-top: 20rem;
-    margin-bottom: -1rem;
-    width: 100%;
-    transform: rotate(180deg);
-    overflow: hidden;
-    line-height: 0;
+.values {
+
+    &__heading {
+        grid-column: 2 / span 1;
+        color: var(--color-primary);
+        font-size: 5rem;
+        font-weight: 300;
+
+        @media only screen and (max-width: 850px) {
+            grid-column: 2 /  -1;
+            grid-row: 1 / 2;
+            
+            margin-bottom: 7rem;
+        }
+    }
+
+    &__features {
+        grid-column: 4 / span 6;
+
+        display: grid;
+        grid-template-columns: repeat(2 , minmax(25rem, 1fr));
+        gap: 10rem;
+
+        @media only screen and (max-width: 850px) {
+            grid-column: 2 /  span 8;
+               
+        }
+
+        @media only screen and (max-width: 550px) {
+            grid-template-columns: 25rem;
+            justify-content: center;
+        }
+    }
 }
 
-.custom-shape-divider-top svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 58px;
-}
 
-.custom-shape-divider-top .shape-fill {
-    fill: var(--color-secondary);
-    background-color: white;
-}
 
-.custom-shape-divider-bottom {
-    margin-bottom: 20rem;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    
-}
 
-.custom-shape-divider-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 58px;
-}
 
-.custom-shape-divider-bottom .shape-fill {
-    fill: var(--color-secondary);
-    background-color: white;
-}
+
+
+
+
