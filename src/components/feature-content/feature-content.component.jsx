@@ -33,7 +33,7 @@ const FeatureContent = () => (
             </div>
             <div className="feature-content__textbox">
                 <svg className='feature-content__icon' >
-                    <use href={sprite + '#icon-target'} />
+                    <use href={sprite + '#icon-target1'} />
                 </svg>
                 <h4 className="feature-content__header">Personal  Approach</h4>
                 <p className="feature-content__text">

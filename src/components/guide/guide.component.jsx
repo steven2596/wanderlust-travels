@@ -4,8 +4,11 @@ import './guide.styles.scss';
 
 import sprite from '../../assets/icons/sprite.svg';
 
+
+
 const Guide = () => (
     <div className="guide">
+
         <div className="guide__content">
             <svg className="guide__content-icon" >
                 <use href={sprite + "#icon-cogs"} />

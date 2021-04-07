@@ -4,16 +4,37 @@
     transform: rotate(180deg);
     overflow: hidden;
     line-height: 0;
+
+    
 }
 
 .wave-shape--top svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 5rem;
+    height: 4rem;
 }
 
 .wave-shape--top .shape-fill {
     fill: var(--color-secondary);
     background-color: var(--color-white);
+
+    
 }
+
+.full-wave {
+    grid-column: 1 / -1;
+    margin-top: -15rem;
+}
+
+.wave-home .shape-fill {
+    fill: var(--color-white);
+    
+}
+
+.wave-home svg {
+    height: 7rem;
+}
+
+
+

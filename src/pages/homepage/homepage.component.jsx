@@ -15,6 +15,8 @@ import PackageSection from '../../components/package-section/package-section.com
 import ReviewSlider from '../../components/review/review.component';
 import DestinationSlider from '../../components/destination-slider/destination-slider.component';
 import Newsletter from '../../components/newsletter/newsletter.component';
+import WaveTop from '../../components/wave-top/wave-top.component';
+import WaveBottom from '../../components/wave-bottom/wave-bottom.component';
 
 
 
@@ -23,14 +25,19 @@ const HomePage = () => (
     <div className="homepage">
 
         <Header />
+        <WaveTop full home />
+
         <FeatureImg />
         <FeatureContent />
         <PackageSection />
         <CustomPlan />
         <Service />
-
         <DestinationSlider />
+
+        <WaveTop full />
         <Guide />
+        <WaveBottom full />
+
         <ReviewSlider />
         <Contact />
         <Newsletter />

@@ -4,7 +4,7 @@
                             repeat(8, [col-start] minmax(min-content ,15rem) [col-end]) 
                             [center-end] 1fr [full-end];
 
-    grid-template-rows: 100vh repeat(7, min-content);
+    grid-template-rows: 110vh repeat(7, min-content);
 
     @media only screen and (max-width: 900px) {
         grid-template-columns: [center-start]
