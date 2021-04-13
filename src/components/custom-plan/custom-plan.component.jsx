@@ -10,7 +10,6 @@ const CustomPlan = () => {
     return (
         <div className="custom-plan">
             <div className="custom-plan__content">
-                <span className="custom-plan__line"></span>
                 <h2 className="custom-plan__heading">Custom Plan</h2>
                 <p className="custom-plan__text">
                     All of our package tours are excellent. But if you have something

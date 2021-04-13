@@ -29,7 +29,12 @@
        margin-bottom: 4rem;
        margin-left: 10rem;
 
-       animation: moveFromRight 1s;   
+       animation: moveFromRight 1s;
+       
+       @media only screen and (max-width: 600px) {
+           margin-left: 3rem;
+           
+       }
     }
 
     &__heading {
@@ -66,16 +71,25 @@
         display: grid;
         grid-template-columns: 1fr repeat(10, minmax(min-content, 1fr)) 1fr;
         grid-template-rows: min-content 30vw;
-        
-        column-gap: 4rem;
+        column-gap: 10rem;
         row-gap: 10rem;
-        margin : 15rem 0;
+        margin: 15rem 0;
+
+        @media only screen and (max-width: 800px) {
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: min-content min-content 50vw;
+            column-gap: 0;
+            row-gap: 5rem;
+        }
+        
+        
+        
 
         &-header {
             grid-column: 2 / span 10;
             grid-row: 1 / 2;
-            justify-self: center;
-
+            
+            text-align: center;
             font-size: 5rem;
             font-weight: 500;
             text-transform: uppercase;
@@ -84,6 +98,21 @@
             background-clip: text;
             -moz-background-clip: text;
             color: transparent;
+
+            @media only screen and (max-width: 900px) {
+                grid-column: 1 / -1;
+                margin: 0 5rem;
+                
+            }
+
+            @media only screen and (max-width: 600px) {
+                grid-column: 1 / -1;
+                margin: 0 2rem;
+                font-size: 3.5rem;
+            }
+
+           
+            
         }
 
         &-imgContainer {
@@ -91,6 +120,18 @@
             grid-row: 2 / 3;
 
             position: relative;
+
+            @media only screen and (max-width: 1100px) {
+                grid-column: 1 / span 6;
+                margin-left: 6rem;
+            }
+
+            @media only screen and (max-width: 800px) {
+                grid-column: 1 / -1;
+                grid-row: 3 / 4;
+                margin: 0 3rem;
+                
+            }
         }
 
         &-image {
@@ -120,6 +161,22 @@
         padding: 3rem;
         
         padding-left: 7rem;
+
+        @media only screen and (max-width: 1200px) {
+            margin-top: 8%;
+            grid-column: 6 / span 6;
+            
+        }
+
+        @media only screen and (max-width: 800px) {
+            grid-column: 1 / -1;
+            grid-row: 2 / 3;
+            margin-top: 0;
+            padding-left: 0;
+            margin: 0 3rem;
+        }
+
+        
        
 
         &-header {

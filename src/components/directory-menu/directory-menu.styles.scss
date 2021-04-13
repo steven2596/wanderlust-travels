@@ -5,6 +5,17 @@
     grid-template-rows: repeat(2, 25rem);
     gap: 1.5rem;
     margin-bottom: 15rem;
+
+    @media only screen and (max-width: 1000px) {
+        grid-template-columns: 1fr repeat(5, [col-start] 1fr [col-end]) 1fr;
+    }
+
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 25rem);
+        gap: 0;
+        row-gap: 3rem;
+    }
 }
 
 .menu {
@@ -21,25 +32,50 @@
 
     &__link {
         transition: all .5s;
+
+        @media only screen and (max-width: 600px) {
+            margin: 0 3rem;
+        }
+
         &--1 {
             grid-column: col-start 1 / span 2;
             grid-row: 1 / 2;
+
+            @media only screen and (max-width: 600px) {
+                grid-column: 1 / -1;
+                grid-row: 1 / 2;
+            }
         }
 
         &--2 {
             grid-column: col-start 3 /  span 3;
             grid-row: 1 / 2;
+
+            @media only screen and (max-width: 600px) {
+                grid-column: 1 / -1;
+                grid-row: 2 / 3;
+            }
             
         }
 
         &--3 {
             grid-column: col-start 1 / span 3;
             grid-row: 2 / 3;
+
+            @media only screen and (max-width: 600px) {
+                grid-column: 1 / -1;
+                grid-row: 3 / 4;
+            }
         }
 
         &--4 {
             grid-column: col-start 4 / span 2;
             grid-row: 2 / 3;
+
+            @media only screen and (max-width: 600px) {
+                grid-column: 1 / -1;
+                grid-row: 4 / 5;
+            }
         }
 
         &:hover {

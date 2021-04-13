@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../logo/logo.component';
+import NavButton from '../navbutton/navbutton.component';
 
 import './navbar.styles.scss';
 
@@ -18,6 +19,7 @@ const Navbar = () => {
                     <a href="/faqs" className="nav__link">FAQs</a>
                 </li>
             </ul>
+            <NavButton />
         </nav>
     )
 };

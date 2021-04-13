@@ -18,12 +18,15 @@
         margin-left: auto;
 
         display: flex;
+
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
     }
 
     &__item {
         cursor: pointer;
         position: relative;
-        
         transition: all .3s;
 
         &:not(:last-child) {
