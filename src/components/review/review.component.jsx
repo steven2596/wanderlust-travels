@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './review.styles.scss';
+import Fade from 'react-reveal/Fade';
 
 import reviews from './review.data';
 
@@ -23,10 +24,13 @@ const ReviewSlider = () => {
     return (
 
         < div className="review-slider" >
-            <figure className="review-slider__arrow review-slider__arrow--next" onClick={nextSlide} >&#8594;</figure>
-            <figure className="review-slider__arrow review-slider__arrow--previous" onClick={prevSlide}>&#8592;</figure>
-
-            <h2 className="review-slider__header">Reviews</h2>
+            <Fade bottom cascade duration={2000} >
+                <figure className="review-slider__arrow review-slider__arrow--next" onClick={nextSlide} >&#8594;</figure>
+                <figure className="review-slider__arrow review-slider__arrow--previous" onClick={prevSlide}>&#8592;</figure>
+            </Fade>
+            <Fade left duration={2000} >
+                <h2 className="review-slider__header">Our Testimonials</h2>
+            </Fade>
 
             {
                 reviews.map(({ name, comment, image }, index) => {
@@ -35,13 +39,15 @@ const ReviewSlider = () => {
                             {
                                 index === current && (
                                     <>
-                                        <div className="review__image-container">
-                                            <img src={image} alt="image" className="review__image" />
-                                        </div>
-                                        <div className="review__text">
-                                            <p className="review__comment">{comment}</p>
-                                            <span className="review__name">{name}</span>
-                                        </div>
+                                        <Fade bottom duration={2000} >
+                                            <div className="review__image-container">
+                                                <img src={image} alt="image" className="review__image" />
+                                            </div>
+                                            <div className="review__text">
+                                                <p className="review__comment">{comment}</p>
+                                                <span className="review__name">{name}</span>
+                                            </div>
+                                        </Fade>
                                     </>
                                 )
                             }

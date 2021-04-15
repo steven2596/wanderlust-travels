@@ -2,6 +2,8 @@ import React from 'react';
 
 import './homepage.styles.scss';
 
+
+
 import Header from '../../components/header/header.component';
 import CustomPlan from '../../components/custom-plan/custom-plan.component';
 import FeatureImg from '../../components/feature-img/feature-img.component';
@@ -23,7 +25,6 @@ import WaveBottom from '../../components/wave-bottom/wave-bottom.component';
 
 const HomePage = () => (
     <div className="homepage">
-
         <Header />
         <WaveTop full home />
 
@@ -41,8 +42,8 @@ const HomePage = () => (
         <ReviewSlider />
         <Contact />
         <Newsletter />
-
     </div>
+
 );
 
 export default HomePage;

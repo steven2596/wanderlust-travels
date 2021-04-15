@@ -7,7 +7,7 @@ import sprite from '../../assets/icons/sprite.svg';
 const PackageBenefit = () => {
     return (
         <div className="benefits">
-            <h1 className="benefits__heading">tour packages benefits</h1>
+            <h1 className="benefits__heading">Package Benefits</h1>
 
             <section className="benefits__container">
                 <div className="benefits__benefit">

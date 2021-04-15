@@ -32,12 +32,12 @@ const PackageTour = ({ packageTour }) => {
                     </div>
                     <p className="content__text">This package includes:</p>
                     <ul className="content__details">
-                        <li className="content__detail"><span>&#8594;</span> Visa Application</li>
-                        <li className="content__detail"><span>&#8594;</span> Flight Booking</li>
-                        <li className="content__detail"><span>&#8594;</span> Flight Ticket & Visa Fees Included</li>
-                        <li className="content__detail"><span>&#8594;</span> Four-star Hotels and Inns</li>
-                        <li className="content__detail"><span>&#8594;</span> All Meals</li>
-                        <li className="content__detail"><span>&#8594;</span> Free SIM Card(5GB Data + 150mins)</li>
+                        <li className="content__detail"><span>&#10148;</span> Visa Application</li>
+                        <li className="content__detail"><span>&#10148;</span> Flight Booking</li>
+                        <li className="content__detail"><span>&#10148;</span> Flight Ticket & Visa Fees Included</li>
+                        <li className="content__detail"><span>&#10148;</span> Four-star Hotels and Inns</li>
+                        <li className="content__detail"><span>&#10148;</span> All Meals</li>
+                        <li className="content__detail"><span>&#10148;</span> Free SIM Card(5GB Data + 150mins)</li>
                     </ul>
                 </div>
 

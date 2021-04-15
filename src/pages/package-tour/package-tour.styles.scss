@@ -9,21 +9,22 @@
 
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        column-gap: 6rem;
+        
 
-        margin: 10rem 0;
+        margin: 20rem 0;
     }
 
     &__header {
-        grid-column: 2 / -1;
-
+        grid-column: 1 / -1;
+        
         font-size: 5rem;
         font-weight: 200;
-        margin-bottom: var(--mar-s);
+        margin-bottom: var(--mar-l);
+        color: var(--color-primary);
     }
 
     &__img-container {
-        grid-column: 2 / span 3 ;
+        grid-column: 1 / span 4 ;
 
     }
 
@@ -35,7 +36,7 @@
     }
 
     &__content {
-        grid-column: 5 / -1 ;
+        grid-column: 6 / -1 ;
     }
 }
 
@@ -44,6 +45,7 @@
     &__header{
         font-size: var(--font-xl);
         margin-bottom: var(--mar-s);
+        font-weight: 300;
     }
 
     &__destinations {
@@ -53,6 +55,7 @@
     &__item {
         font-size: var(--font-l);
         margin-bottom: var(--mar-s);
+       
 
         display: flex;
         
@@ -60,30 +63,35 @@
 
     &__day {   
         color: var(--color-secondary);
-        flex: 0 0 15%;
+        flex: 0 0 20%;
+        letter-spacing: 2px;
     }
     &__name {
-        
+        font-family: var(--font-secondary);
+        color: var(--color-secondary);
+        font-weight: 400;
     }
 
     &__text {
-        font-size: var(--font-l);
+        font-size: var(--font-m);
         font-family: var(--font-secondary);
-        margin-bottom: var(--mar-xs);
+        
+        margin-bottom: var(--mar-s);
     }
 
     &__details {
-        font-size: var(--font-l);
+        font-size: var(--font-m);
         font-family: var(--font-secondary);
         list-style: none;
+        
     }
 
     &__detail {
-        margin-bottom: var(--mar-xs);
+        margin-bottom: var(--mar-s);
 
         & > span {
             margin-right: var(--mar-s);
-            color: var(--color-secondary);
+            color: var(--color-primary);
         }
     }
 
