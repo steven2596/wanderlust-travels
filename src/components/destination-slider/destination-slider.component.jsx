@@ -23,7 +23,7 @@ const DestinationSlider = () => {
     }
 
     return (
-        <Fade bottom cascade duration={1500} >
+        <Fade bottom duration={1000} distance="5rem">
             <div className="destination-slider" >
                 <figure className="destination-slider__arrow destination-slider__arrow--next" onClick={nextSlide} >&#8594;</figure>
                 <figure className="destination-slider__arrow destination-slider__arrow--previous" onClick={prevSlide}>&#8592;</figure>

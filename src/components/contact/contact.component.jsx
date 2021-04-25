@@ -8,12 +8,12 @@ import contact from '../../assets/images/contact.jpg';
 
 const Contact = () => (
     <div className="contact">
-        <Fade left duration={1500} >
+        <Fade bottom duration={1000} distance="5rem">
             <div className="contact__img">
                 <img src={contact} alt="contact-image" className="contact__picture" />
             </div>
         </Fade>
-        <Fade right duration={1500} >
+        <Fade bottom duration={1000} distance="5rem">
             <div className="contact__content">
                 <div className="contact__line"></div>
                 <h3 className="contact__header">Dream it, Visit it</h3>

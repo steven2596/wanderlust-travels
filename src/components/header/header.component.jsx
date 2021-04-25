@@ -2,80 +2,22 @@ import React from 'react';
 
 import './header.style.scss';
 
-import { motion } from 'framer-motion';
-
+import Fade from 'react-reveal/Fade';
 import Button from '../button/button';
-
-const containerVariants = {
-    start: {
-        opacity: 0,
-        width: 0
-    },
-
-    end: {
-        opacity: 1,
-        width: '100vw',
-        transition: {
-            type: 'tween',
-            duration: 1.5,
-            when: 'beforeChildren',
-            staggerChildren: 0.4,
-            ease: 'easeInOut'
-        }
-    },
-    exit: {
-        x: "-100vw",
-        opacity: 0
-    }
-}
-
-const childVariants = {
-    start: {
-        y: 50,
-        opacity: 0
-    },
-
-    end: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            ease: 'easeInOut',
-            duration: 0.7
-        }
-    }
-}
-
-const buttonVariants = {
-    start: {
-        x: 10,
-        opacity: 0
-    },
-
-    end: {
-        x: 0,
-        opacity: 1,
-        transition: {
-
-            duration: 0.7,
-            ease: 'easeOut'
-        }
-    }
-}
-
 
 
 const Header = () => (
-    <motion.div
-        variants={containerVariants}
-        initial="start"
-        animate="end"
-        className='header' >
-        <div className='header__container'>
-            <motion.h2 variants={childVariants} className="header__heading header__heading-1">discover</motion.h2>
-            <motion.h1 variants={childVariants} className="header__heading header__heading-2">switzerland</motion.h1>
-            <Button route="/tours" childVariants={buttonVariants} >Learn more</Button>
-        </div>
-    </motion.div >
+    <Fade duration={1500}>
+        <div className='header' >
+            <Fade bottom cascade duration={1000} delay={500}>
+                <div className='header__container'>
+                    <h2 className="header__heading header__heading-1">discover</h2>
+                    <h1 className="header__heading header__heading-2">switzerland</h1>
+                    <Button route="/tours" >Learn more</Button>
+                </div>
+            </Fade>
+        </div >
+    </Fade>
 );
 
 export default Header;

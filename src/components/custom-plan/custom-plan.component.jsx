@@ -9,7 +9,7 @@ const CustomPlan = () => {
 
     return (
         <div className="custom-plan">
-            <Fade bottom cascade duration={2000} >
+            <Fade bottom duration={1000} distance="5rem">
                 <div className="custom-plan__content">
                     <h2 className="custom-plan__heading">Custom Plan</h2>
                     <p className="custom-plan__text">
@@ -20,7 +20,7 @@ const CustomPlan = () => {
                     <Button onClick={() => setCustomModal(true)} >Contact Now</Button>
                 </div>
             </Fade>
-            <Fade right duration={1500} >
+            <Fade bottom duration={1000} distance="5rem">
                 <div className="custom-plan__img">
                     <div className="custom-plan__picture"></div>
                     <div className="custom-plan__back"></div>

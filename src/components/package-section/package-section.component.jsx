@@ -7,13 +7,13 @@ import PackageCard from '../package-card/package-card.component';
 
 const PackageSection = () => (
     <div className="packages">
-        <Fade bottom duration={2000} >
+        <Fade bottom duration={1000} distance="5rem">
             <h2 className="packages__header">Package Tours</h2>
         </Fade>
         <div className="packages__cards">
             {
                 packageData.map(({ id, ...others }) => (
-                    <Fade right duration={1500} >
+                    <Fade bottom duration={1000} distance="5rem" >
                         <PackageCard key={id} {...others} />
                     </Fade>
                 ))

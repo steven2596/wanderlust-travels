@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import Fade from 'react-reveal/Fade';
 
-
 import './accordion.styles.scss';
 
 const Accordion = ({ faq }) => {
@@ -11,7 +10,7 @@ const Accordion = ({ faq }) => {
     const { question, answer } = faq;
 
     return (
-        <Fade left duration={1000} >
+        <Fade left duration={1000} distance="5rem">
             <div className="accordion">
                 <label className="accordion__container" onClick={() => setHideAnswer(!hideAnswer)}>
                     <input type="checkbox" className="accordion__checkbox" />
@@ -25,6 +24,7 @@ const Accordion = ({ faq }) => {
                 </label>
             </div>
         </Fade>
+
     )
 };
 

@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 import './newsletter.styles.scss';
 
 const Newsletter = () => (
-    <Fade right duration={1500} >
+    <Fade duration={1500} >
         <div className="newsletter">
 
             <h2 className="newsletter__header">

@@ -6,7 +6,7 @@ import './feature-content.styles.scss';
 import sprite from '../../assets/icons/sprite.svg';
 
 const FeatureContent = () => (
-    <Fade bottom duration={2000} >
+    <Fade bottom duration={1000} distance="5rem">
         <div className="feature-content">
             <div className="feature-content__heading">
                 <span className="feature-content__heading-1">what to</span>

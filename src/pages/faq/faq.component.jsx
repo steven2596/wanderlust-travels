@@ -28,18 +28,21 @@ const FaQs = () => {
                     Frequently Asked Questions
                 </h1>
             </motion.header>
+            <Fade duration={1000} delay={500}>
+                <div className="faqs__container">
 
-            <div className="faqs__container">
-                {
+                    {
 
-                    faqData.map(faq => (
+                        faqData.map(faq => (
 
-                        <Accordion key={faq.id} faq={faq} />
+                            <Accordion key={faq.id} faq={faq} />
 
-                    ))
+                        ))
 
-                }
-            </div>
+                    }
+
+                </div>
+            </Fade>
 
         </section>
     )

@@ -24,11 +24,11 @@ const ReviewSlider = () => {
     return (
 
         < div className="review-slider" >
-            <Fade bottom cascade duration={2000} >
-                <figure className="review-slider__arrow review-slider__arrow--next" onClick={nextSlide} >&#8594;</figure>
-                <figure className="review-slider__arrow review-slider__arrow--previous" onClick={prevSlide}>&#8592;</figure>
-            </Fade>
-            <Fade left duration={2000} >
+
+            <figure className="review-slider__arrow review-slider__arrow--next" onClick={nextSlide} >&#8594;</figure>
+            <figure className="review-slider__arrow review-slider__arrow--previous" onClick={prevSlide}>&#8592;</figure>
+
+            <Fade bottom duration={1000} >
                 <h2 className="review-slider__header">Our Testimonials</h2>
             </Fade>
 
@@ -39,7 +39,7 @@ const ReviewSlider = () => {
                             {
                                 index === current && (
                                     <>
-                                        <Fade bottom duration={2000} >
+                                        <Fade bottom duration={1500} distance="1rem" >
                                             <div className="review__image-container">
                                                 <img src={image} alt="image" className="review__image" />
                                             </div>
