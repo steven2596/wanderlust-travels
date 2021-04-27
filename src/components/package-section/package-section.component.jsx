@@ -8,7 +8,7 @@ import PackageCard from '../package-card/package-card.component';
 const PackageSection = () => (
     <div className="packages">
         <Fade bottom duration={1000} distance="5rem">
-            <h2 className="packages__header">Package Tours</h2>
+            <h2 className="packages__header">Featured Tours</h2>
         </Fade>
         <div className="packages__cards">
             {

@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
 
 const TourID = {
+    package0: 0,
     package1: 1,
     package2: 2,
     package3: 3

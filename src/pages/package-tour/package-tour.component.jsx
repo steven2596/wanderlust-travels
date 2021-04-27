@@ -11,7 +11,7 @@ import { selectTourPackage } from '../../redux/tour-package/tour-package.selecto
 
 const PackageTour = ({ packageTour }) => {
 
-    const { title, destinations, image } = packageTour;
+    const { title, destinations, image, price } = packageTour;
     return (
         <Fade bottom duration={1000} distance="5rem">
             <div className='tour'>
@@ -22,26 +22,33 @@ const PackageTour = ({ packageTour }) => {
                     </div>
 
                     <div className="tour__content">
-                        <h4 className="content__header">Itinerary</h4>
-                        <div className="content__destinations">
-                            {
-                                destinations.map((destination, index) => (
-                                    <p className="content__item">
-                                        <span className="content__day">Day {index + 1}</span>
-                                        <span className="content__name">{destination}</span>
-                                    </p>
-                                ))
-                            }
-                        </div>
-                        <p className="content__text">This package includes:</p>
-                        <ul className="content__details">
-                            <li className="content__detail"><span>&#10148;</span> Visa Application</li>
-                            <li className="content__detail"><span>&#10148;</span> Flight Booking</li>
-                            <li className="content__detail"><span>&#10148;</span> Flight Ticket & Visa Fees Included</li>
-                            <li className="content__detail"><span>&#10148;</span> Four-star Hotels and Inns</li>
-                            <li className="content__detail"><span>&#10148;</span> All Meals</li>
-                            <li className="content__detail"><span>&#10148;</span> Free SIM Card(5GB Data + 150mins)</li>
-                        </ul>
+                        <Fade bottom duration={1000} distance="5rem">
+                            <div className="content__left">
+                                <h4 className="content__header">Itinerary</h4>
+                                <div className="content__destinations">
+                                    {
+                                        destinations.map((destination, index) => (
+                                            <p className="content__item">
+                                                <span className="content__day">Day {index + 1}</span>
+                                                <span className="content__name">{destination}</span>
+                                            </p>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                            <div className="content__right">
+                                <p className="content__text">This package includes:</p>
+                                <ul className="content__details">
+                                    <li className="content__detail"><span>&#10148;</span> Visa Application</li>
+                                    <li className="content__detail"><span>&#10148;</span> Flight Booking</li>
+                                    <li className="content__detail"><span>&#10148;</span> Flight Ticket & Visa Fees Included</li>
+                                    <li className="content__detail"><span>&#10148;</span> Four-star Hotels and Inns</li>
+                                    <li className="content__detail"><span>&#10148;</span> All Meals</li>
+                                    <li className="content__detail"><span>&#10148;</span> Free SIM Card(5GB Data + 150mins)</li>
+                                </ul>
+                                <span className="content__price">$ {price}</span>
+                            </div>
+                        </Fade>
                     </div>
 
                 </section>

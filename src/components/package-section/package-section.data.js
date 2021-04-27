@@ -1,18 +1,16 @@
-import package1 from '../../assets/images/package-1.jpg';
-
 const packageData = [
     {
         id: 1,
         type: 'A',
-        days: 7,
-        destinations: 7,
-        price: 1699,
+        days: 5,
+        destinations: 5,
+        price: 1499,
         image: 'card1',
-        routeName: '/package1'
+        routeName: '/package0'
     },
     {
         id: 2,
-        type: 'B',
+        type: 'C',
         days: 9,
         destinations: 9,
         price: 2499,
@@ -21,7 +19,7 @@ const packageData = [
     },
     {
         id: 3,
-        type: 'C',
+        type: 'D',
         days: 11,
         destinations: 11,
         price: 2699,

@@ -30,19 +30,19 @@ const CustomFormModal = ({ setCustomModal }) => {
             <div className="modal__content">
                 <img src={customImg} alt="modal-img" className="content__bg-img" />
 
-                <div className="content__form-container">
-                    <div className="content__left">
-                        <p className="content__header-container">
-                            <span className="content__heading--1">Get Started</span>
-                            <span className="content__heading--2">Fill the form to make a custom trip plan</span>
+                <div className="form-content__form-container">
+                    <div className="form-content__left">
+                        <p className="form-content__header-container">
+                            <span className="form-content__heading--1">Get Started</span>
+                            <span className="form-content__heading--2">Fill the form to make a custom trip plan</span>
                         </p>
-                        <div className="content__logo">
+                        <div className="form-content__logo">
                             <Logo logoWhite />
                         </div>
 
                     </div>
-                    <section className="content__right">
-                        <form className="content__form" onSubmit={handleSubmit} >
+                    <section className="form-content__right">
+                        <form className="form-content__form" onSubmit={handleSubmit} >
                             <FormInput
                                 label="Name"
                                 onChange={(e) => setName(e.target.value)}
@@ -58,16 +58,16 @@ const CustomFormModal = ({ setCustomModal }) => {
                                 onChange={(e) => setPhone(e.target.value)}
                                 value={phone}
                             />
-                            <div className="content__textarea-container" >
+                            <div className="form-content__textarea-container" >
                                 <textarea
                                     rows="5"
-                                    className="content__textarea"
+                                    className="form-content__textarea"
                                     onChange={(e) => setComment(e.target.value)}
                                     value={comment}
                                     placeholder="Comment"
                                 />
                                 <label
-                                    className={`content__textarea-label ${comment ? 'shrink-textareaLabel' : ''}`}
+                                    className={`form-content__textarea-label ${comment ? 'shrink-textareaLabel' : ''}`}
 
                                 >
                                     Comment
@@ -78,11 +78,11 @@ const CustomFormModal = ({ setCustomModal }) => {
 
                             <Button small round >submit</Button>
                         </form>
-                        <footer className="content__footer">
+                        <footer className="form-content__footer">
                             <span>Tip:</span>
                             <p>Please provide information such as trip duration, places and other details</p>
                         </footer>
-                        <span className="content__exit-icon" onClick={() => setCustomModal(false)}>&#10006;</span>
+                        <span className="form-content__exit-icon" onClick={() => setCustomModal(false)}>&#10006;</span>
                     </section>
                 </div>
             </div>

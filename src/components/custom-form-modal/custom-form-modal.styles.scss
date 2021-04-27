@@ -50,17 +50,7 @@
     }
 }
 
-.content {
-
-    &__bg-img {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 1rem;
-        
-        
-    }
+.form-content {
 
     &__form-container {
         height: 100%;
@@ -75,6 +65,15 @@
         display: grid;
         grid-template-columns: repeat(8, 1fr);
     }
+
+    &__bg-img {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 1rem;    
+    }
+
 
     &__left {
         grid-column: 1 / span 3;
@@ -221,6 +220,12 @@
 
 
 }
+
+        
+
+
+
+
 
 .shrink-textareaLabel {
     @include shrinkTextareaLabel;

@@ -8,14 +8,14 @@ import sprite from '../../assets/icons/sprite.svg';
 
 const Footer = () => (
     <div className="footer">
-        <Fade bottom cascade duration={1500} >
+        <Fade cascade duration={1000} >
             <div className="footer__text">
                 <p>All rights reserved.</p>
                 <p>Copyright by WANDERLUST Group Ltd 2021</p>
             </div>
         </Fade>
 
-        <Fade bottom cascade duration={1500} >
+        <Fade cascade duration={1000} >
             <div className="footer__icon">
                 <span className="footer__logo-text">wanderlust</span>
                 <div className="footer__socials">
@@ -38,7 +38,7 @@ const Footer = () => (
             </div>
         </Fade>
 
-        <Fade bottom cascade duration={1500} >
+        <Fade cascade duration={1000} >
             <nav className="footer__links">
                 <a href="/about" className="footer__link">About Us</a>
                 <a href="/faqs" className="footer__link">FAQ's</a>
