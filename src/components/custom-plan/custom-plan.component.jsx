@@ -26,12 +26,12 @@ const CustomPlan = () => {
                     <div className="custom-plan__back"></div>
                 </div>
             </Fade>
-            {
-                customModal ?
-                    <CustomFormModal
-                        setCustomModal={setCustomModal}
-                    /> : null
-            }
+
+            <CustomFormModal
+                customModal={customModal}
+                setCustomModal={setCustomModal}
+            />
+
         </div>
     )
 

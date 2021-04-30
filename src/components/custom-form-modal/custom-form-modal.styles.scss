@@ -7,25 +7,27 @@
     opacity: 1;
 }
 
-@keyframes modalReveal {
-    0% {
-        opacity: 0;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-    }
+// @keyframes modalReveal {
+//     0% {
+//         opacity: 0;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%) scale(0);
+//     }
 
-    100% {
-        opacity: 1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-    }
-}
+//     100% {
+//         opacity: 1;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%) scale(1);
+//     }
+// }
 
 .modal {
+    
 
     &__overlay {
+        display: none;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -34,20 +36,24 @@
         background-color: var(--color-dark);
         opacity: .5;
         z-index: 1000;
+        transition: all .3s;
     }
 
     &__content { 
+        display: flex;
+        pointer-events: none;
         position: fixed;
         top: 50%;
         left: 51%;
-        transform: translate(-50%, -50%);      
-        height: 60vh;
+        transform: translate(-50%, -50%) scale(0);      
+        height: 85vh;
+        max-height: 65rem;
         width: 80%;
         z-index: 2000;
-        animation: modalReveal .5s;
         border-radius: 1rem;
         overflow: hidden;
-        display: flex;
+        opacity: 0;
+        transition: all .5s;
 
         @media only screen and (max-width: 1200px) {
             height: 60vw;
@@ -55,12 +61,14 @@
         }
 
         @media only screen and (max-width: 800px) {
-            height: 55vh;
+            height: 70vh;
             width: 95%;
+            left: 50%; 
         }
 
         @media only screen and (max-width: 600px) {
-           height: 75vh;  
+           height: 75vh;
+            
         }
 
         @media only screen and (max-width: 320px) {
@@ -89,7 +97,8 @@
             left: 0;
             margin-left: 0;
             width: 100%;
-        } 
+        }
+        
     }
 
     &__bg-img {
@@ -176,6 +185,7 @@
 
         @media only screen and (max-width: 500px) {
             width: 90%;
+            margin-top: 10%;
         }
         
     }
@@ -273,6 +283,18 @@
 
 }
 
+.modal-active {
+    
+    & .modal__overlay {
+        display: block;
+    }
+
+    & .modal__content {
+        pointer-events: all;
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1; 
+    }
+}
         
 
 

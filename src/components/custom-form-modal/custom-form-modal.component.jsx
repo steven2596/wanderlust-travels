@@ -8,7 +8,7 @@ import Button from '../button/button';
 
 import './custom-form-modal.styles.scss';
 
-const CustomFormModal = ({ setCustomModal }) => {
+const CustomFormModal = ({ customModal, setCustomModal }) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -25,7 +25,7 @@ const CustomFormModal = ({ setCustomModal }) => {
     }
 
     return ReactDom.createPortal(
-        <>
+        <div className={`modal ${customModal ? 'modal-active' : ''}`}>
             <div className="modal__overlay"></div>
             <div className="modal__content">
                 <img src={customImg} alt="modal-img" className="form-content__bg-img" />
@@ -86,7 +86,7 @@ const CustomFormModal = ({ setCustomModal }) => {
                     </section>
                 </div>
             </div>
-        </>,
+        </div>,
         document.getElementById('custom-plan')
     )
 };
