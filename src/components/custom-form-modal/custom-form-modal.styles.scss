@@ -39,14 +39,34 @@
     &__content { 
         position: fixed;
         top: 50%;
-        left: 50%;
+        left: 51%;
         transform: translate(-50%, -50%);      
-        height: 80vh;
+        height: 60vh;
         width: 80%;
         z-index: 2000;
         animation: modalReveal .5s;
-
+        border-radius: 1rem;
+        overflow: hidden;
         display: flex;
+
+        @media only screen and (max-width: 1200px) {
+            height: 60vw;
+            width: 95%;
+        }
+
+        @media only screen and (max-width: 800px) {
+            height: 55vh;
+            width: 95%;
+        }
+
+        @media only screen and (max-width: 600px) {
+           height: 75vh;  
+        }
+
+        @media only screen and (max-width: 320px) {
+            height: 87vh;
+            top: 55%;  
+         }
     }
 }
 
@@ -64,6 +84,12 @@
 
         display: grid;
         grid-template-columns: repeat(8, 1fr);
+
+        @media only screen and (max-width: 800px) {
+            left: 0;
+            margin-left: 0;
+            width: 100%;
+        } 
     }
 
     &__bg-img {
@@ -71,7 +97,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        border-radius: 1rem;    
+
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }   
     }
 
 
@@ -82,6 +111,13 @@
         display: flex;
         flex-direction: column;
         
+        @media only screen and (max-width: 700px) {
+            padding: 2rem 2rem;
+        }
+
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
     }
 
     &__header-container {
@@ -122,6 +158,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media only screen and (max-width: 600px) {
+            grid-column: 1 / -1;
+            padding: 1rem 0;
+        }
     }
 
     &__form {
@@ -132,6 +173,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media only screen and (max-width: 500px) {
+            width: 90%;
+        }
         
     }
 
@@ -191,8 +236,11 @@
         border-top: 1px solid var(--color-white);
         color: var(--color-white);
         line-height: var(--line-height);
-
         display: flex;
+
+        @media only screen and (max-width: 500px) {
+            width: 90%;
+        }
 
         & > span {
             color: var(--color-yellow);
@@ -210,6 +258,10 @@
         right: 1.5rem;
         cursor: pointer;
         transition: all .3s;
+
+        @media only screen and (max-width: 400px) {
+            top: 0;  
+         }
 
         &:hover {
             color: var(--color-red);

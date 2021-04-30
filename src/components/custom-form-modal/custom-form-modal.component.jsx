@@ -28,7 +28,7 @@ const CustomFormModal = ({ setCustomModal }) => {
         <>
             <div className="modal__overlay"></div>
             <div className="modal__content">
-                <img src={customImg} alt="modal-img" className="content__bg-img" />
+                <img src={customImg} alt="modal-img" className="form-content__bg-img" />
 
                 <div className="form-content__form-container">
                     <div className="form-content__left">
