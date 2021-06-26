@@ -1,0 +1,60 @@
+.slider {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider-window {
+    width: 50rem;
+    height: 50rem;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.container {
+    width: 300rem;
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.box {
+    width: 50rem;
+    height: 50rem;
+
+    &--1 {
+        background-color: red;
+    }
+
+    &--2 {
+        background-color: aqua;
+    }
+
+    &--3 {
+        background-color: green;
+    }
+
+    &--4 {
+        background-color: black;
+    }
+
+    &--5 {
+        background-color: violet;
+    }
+
+    &--6 {
+        background-color: blue;
+    }
+}
+
+.btn-group {
+    margin-top: 5rem;
+}
+

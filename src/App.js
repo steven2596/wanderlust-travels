@@ -10,7 +10,7 @@ import AboutPage from './pages/about/about.component';
 import FaQs from './pages/faq/faq.component';
 import HomePage from './pages/homepage/homepage.component';
 import Tours from './pages/tours/tour.component';
-
+import Slider from './pages/slider/slider.component';
 
 function App() {
   return (
@@ -21,6 +21,8 @@ function App() {
         <Route path='/tours' component={Tours} />
         <Route exact path='/faqs' component={FaQs} />
         <Route exact path='/about' component={AboutPage} />
+        <Route exact path='/test' component={Slider} />
+
       </Switch>
       <Footer />
     </div>

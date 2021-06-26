@@ -10,8 +10,8 @@ import './faq.styles.scss';
 
 import faqData from './faq.data';
 
-
 import Accordion from '../../components/accordion/accordion.component';
+
 
 const FaQs = () => {
     return (
@@ -43,7 +43,6 @@ const FaQs = () => {
 
                 </div>
             </Fade>
-
         </section>
     )
 };
