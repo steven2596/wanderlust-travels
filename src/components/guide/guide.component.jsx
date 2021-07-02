@@ -9,7 +9,7 @@ import sprite from '../../assets/icons/sprite.svg';
 
 const Guide = () => (
     <div className="guide">
-        <Fade bottom cascade duration={1500} >
+        <Fade bottom duration={1000} distance="5rem">
             <div className="guide__content">
                 <svg className="guide__content-icon" >
                     <use href={sprite + "#icon-cogs"} />
@@ -17,12 +17,12 @@ const Guide = () => (
                 <h4 className="guide__content-header">How It Works</h4>
                 <p className="guide__content-text">
                     Our mission is to offer a splendid experience to you. Everything we do is meticulously planned so that it will change the way you travel. No matter what you’d like to do, we’ll do our best to make it happen.
-            </p>
+                </p>
             </div>
         </Fade>
 
 
-        <Fade right cascade duration={1500} >
+        <Fade right duration={1000} distance="5rem">
             <div className="guide__steps">
                 <div className="guide__step">
                     {/* <figure className="guide__step-circle">c</figure> */}
@@ -34,7 +34,7 @@ const Guide = () => (
                     <p className="guide__step-text">
                         Pick up the phone or drop us an email. There’ll be someone at the other end ready to help.
                         Understanding is the key to our work and it sets us apart from the rest.
-                </p>
+                    </p>
                 </div>
                 <div className="guide__step">
                     {/* <figure className="guide__step-circle guide__step-circle--center">c</figure> */}
@@ -46,7 +46,7 @@ const Guide = () => (
                     <p className="guide__step-text">
                         Choose the tour package that you like. If you have something else in mind,
                         we’ll create a trip plan that’s tailored to your taste and needs. Customer’s satisfaction is our first priority.
-                </p>
+                    </p>
                 </div>
                 <div className="guide__step">
                     {/* <figure className="guide__step-circle" >c</figure> */}
@@ -58,7 +58,7 @@ const Guide = () => (
                     <p className="guide__step-text">
                         Once the trip plan is finalized and you’re happy with the plan, book it and leave the rest to us. Relax and look forward to the trip.
                         We will take care of everything to you.
-                </p>
+                    </p>
                 </div>
             </div>
         </Fade>

@@ -16,7 +16,7 @@ const CustomPlan = () => {
                         All of our package tours are excellent. But if you have something
                         in mind, drop us an email to make a custom plan which is tailored
                         to your preferences and needs.
-            </p>
+                    </p>
                     <Button onClick={() => setCustomModal(true)} >Contact Now</Button>
                 </div>
             </Fade>
